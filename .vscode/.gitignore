@@ -1,0 +1,14 @@
+# Prerequisites
+*.dSYM/
+.DS_Store
+
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Binary (The executable)
+parser
+parser.exe
+
+# VS Code settings (optional, keeps your personal settings private)
+.vscode/

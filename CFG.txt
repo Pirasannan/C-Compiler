@@ -1,0 +1,13 @@
+<program>        ::= <stmt_list>
+<program>        ::= { <stmt_list> }
+<stmt_list>      ::= <stmt> | <stmt> <stmt_list>
+<stmt>           ::= <declaration> | <print_stmt>
+<declaration>    ::= int <identifier> = <expression> ;
+<print_stmt>     ::= print ( <expression> ) ;
+
+<expression>     ::= <term> | <term> + <expression> | <term> - <expression>
+<term>           ::= <factor> | <factor> * <term> | <factor> / <term>
+<factor>         ::= <identifier> | <number> | ( <expression> )
+
+<identifier>     ::= [a-zA-Z]+
+<number>         ::= [0-9]+
